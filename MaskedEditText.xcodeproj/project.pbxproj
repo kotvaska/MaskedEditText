@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279048BAC389A025786EBEE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27904262DC8159E3CE9C974D /* Extensions.swift */; };
 		AB3A61CD201F1F4B0002B36A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A61CC201F1F4B0002B36A /* AppDelegate.swift */; };
 		AB3A61CF201F1F4B0002B36A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A61CE201F1F4B0002B36A /* ViewController.swift */; };
 		AB3A61D2201F1F4B0002B36A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3A61D0201F1F4B0002B36A /* Main.storyboard */; };
@@ -14,6 +15,16 @@
 		AB3A61D7201F1F4B0002B36A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3A61D5201F1F4B0002B36A /* LaunchScreen.storyboard */; };
 		AB3A61E2201F1F4B0002B36A /* MaskedEditTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A61E1201F1F4B0002B36A /* MaskedEditTextTests.swift */; };
 		AB3A61ED201F1F4B0002B36A /* MaskedEditTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A61EC201F1F4B0002B36A /* MaskedEditTextUITests.swift */; };
+		AB3A61FE201F1F720002B36A /* EditExtendedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3A61FA201F1F720002B36A /* EditExtendedView.xib */; };
+		AB3A61FF201F1F720002B36A /* EditNormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A61FB201F1F720002B36A /* EditNormalView.swift */; };
+		AB3A6200201F1F720002B36A /* EditExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A61FC201F1F720002B36A /* EditExtendedView.swift */; };
+		AB3A6201201F1F720002B36A /* EditNormalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB3A61FD201F1F720002B36A /* EditNormalView.xib */; };
+		AB3A6204201F1FE80002B36A /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A6203201F1FE80002B36A /* NibLoadingView.swift */; };
+		AB3A6207201F210E0002B36A /* MaskedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A6205201F210D0002B36A /* MaskedTextField.swift */; };
+		AB3A6208201F210E0002B36A /* MaskedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A6206201F210D0002B36A /* MaskedTextView.swift */; };
+		AB3A620C201F22150002B36A /* Anchorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3A620B201F22150002B36A /* Anchorage.framework */; };
+		AB3A620D201F22150002B36A /* Anchorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB3A620B201F22150002B36A /* Anchorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB3A6210201F22460002B36A /* MaskedEditText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A620F201F22460002B36A /* MaskedEditText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +44,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AB3A620E201F22160002B36A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB3A620D201F22150002B36A /* Anchorage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		27904262DC8159E3CE9C974D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AB3A61C9201F1F4B0002B36A /* MaskedEditText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaskedEditText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3A61CC201F1F4B0002B36A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB3A61CE201F1F4B0002B36A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +73,15 @@
 		AB3A61E8201F1F4B0002B36A /* MaskedEditTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaskedEditTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3A61EC201F1F4B0002B36A /* MaskedEditTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedEditTextUITests.swift; sourceTree = "<group>"; };
 		AB3A61EE201F1F4B0002B36A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB3A61FA201F1F720002B36A /* EditExtendedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditExtendedView.xib; sourceTree = "<group>"; };
+		AB3A61FB201F1F720002B36A /* EditNormalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNormalView.swift; sourceTree = "<group>"; };
+		AB3A61FC201F1F720002B36A /* EditExtendedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditExtendedView.swift; sourceTree = "<group>"; };
+		AB3A61FD201F1F720002B36A /* EditNormalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditNormalView.xib; sourceTree = "<group>"; };
+		AB3A6203201F1FE80002B36A /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
+		AB3A6205201F210D0002B36A /* MaskedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskedTextField.swift; sourceTree = "<group>"; };
+		AB3A6206201F210D0002B36A /* MaskedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskedTextView.swift; sourceTree = "<group>"; };
+		AB3A620B201F22150002B36A /* Anchorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Anchorage.framework; sourceTree = "<group>"; };
+		AB3A620F201F22460002B36A /* MaskedEditText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedEditText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3A620C201F22150002B36A /* Anchorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +113,7 @@
 		AB3A61C0201F1F4B0002B36A = {
 			isa = PBXGroup;
 			children = (
+				AB3A620B201F22150002B36A /* Anchorage.framework */,
 				AB3A61CB201F1F4B0002B36A /* MaskedEditText */,
 				AB3A61E0201F1F4B0002B36A /* MaskedEditTextTests */,
 				AB3A61EB201F1F4B0002B36A /* MaskedEditTextUITests */,
@@ -97,12 +134,14 @@
 		AB3A61CB201F1F4B0002B36A /* MaskedEditText */ = {
 			isa = PBXGroup;
 			children = (
+				AB3A6202201F1F770002B36A /* Resources */,
 				AB3A61CC201F1F4B0002B36A /* AppDelegate.swift */,
 				AB3A61CE201F1F4B0002B36A /* ViewController.swift */,
 				AB3A61D0201F1F4B0002B36A /* Main.storyboard */,
 				AB3A61D3201F1F4B0002B36A /* Assets.xcassets */,
 				AB3A61D5201F1F4B0002B36A /* LaunchScreen.storyboard */,
 				AB3A61D8201F1F4B0002B36A /* Info.plist */,
+				27904262DC8159E3CE9C974D /* Extensions.swift */,
 			);
 			path = MaskedEditText;
 			sourceTree = "<group>";
@@ -125,6 +164,21 @@
 			path = MaskedEditTextUITests;
 			sourceTree = "<group>";
 		};
+		AB3A6202201F1F770002B36A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB3A6205201F210D0002B36A /* MaskedTextField.swift */,
+				AB3A6206201F210D0002B36A /* MaskedTextView.swift */,
+				AB3A6203201F1FE80002B36A /* NibLoadingView.swift */,
+				AB3A61FC201F1F720002B36A /* EditExtendedView.swift */,
+				AB3A61FA201F1F720002B36A /* EditExtendedView.xib */,
+				AB3A61FB201F1F720002B36A /* EditNormalView.swift */,
+				AB3A61FD201F1F720002B36A /* EditNormalView.xib */,
+				AB3A620F201F22460002B36A /* MaskedEditText.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +189,7 @@
 				AB3A61C5201F1F4B0002B36A /* Sources */,
 				AB3A61C6201F1F4B0002B36A /* Frameworks */,
 				AB3A61C7201F1F4B0002B36A /* Resources */,
+				AB3A620E201F22160002B36A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +290,8 @@
 				AB3A61D7201F1F4B0002B36A /* LaunchScreen.storyboard in Resources */,
 				AB3A61D4201F1F4B0002B36A /* Assets.xcassets in Resources */,
 				AB3A61D2201F1F4B0002B36A /* Main.storyboard in Resources */,
+				AB3A61FE201F1F720002B36A /* EditExtendedView.xib in Resources */,
+				AB3A6201201F1F720002B36A /* EditNormalView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3A6208201F210E0002B36A /* MaskedTextView.swift in Sources */,
 				AB3A61CF201F1F4B0002B36A /* ViewController.swift in Sources */,
+				AB3A61FF201F1F720002B36A /* EditNormalView.swift in Sources */,
 				AB3A61CD201F1F4B0002B36A /* AppDelegate.swift in Sources */,
+				AB3A6204201F1FE80002B36A /* NibLoadingView.swift in Sources */,
+				AB3A6210201F22460002B36A /* MaskedEditText.swift in Sources */,
+				AB3A6207201F210E0002B36A /* MaskedTextField.swift in Sources */,
+				AB3A6200201F1F720002B36A /* EditExtendedView.swift in Sources */,
+				279048BAC389A025786EBEE7 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +492,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DYMKXHBMZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MaskedEditText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kotvaska.MaskedEditText;
@@ -443,6 +511,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DYMKXHBMZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MaskedEditText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kotvaska.MaskedEditText;
