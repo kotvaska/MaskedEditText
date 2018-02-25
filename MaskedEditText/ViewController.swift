@@ -12,25 +12,36 @@ import Anchorage
 class ViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
 
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        let views = getMaskedViews()
+        initScrollView(with: views)
+        updateScrollViewHeight()
 
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        updateScrollViewHeight()
+    }
+
+    private func getMaskedViews() -> [UIView] {
         var views = [UIView]()
 
-        views.append(EditExtendedView().create(with: .number))
-        views.append(EditExtendedView().create(with: .email))
+        views.append(EditExtendedView())
+        views.append(EditExtendedView().create(with: .number, isMultiLine: false))
         views.append(EditExtendedView().create(with: .uppercase))
-        views.append(EditExtendedView().create(with: .phone))
-        views.append(EditExtendedView().create(with: .fio))
-        views.append(EditNormalView().create(with: .number))
+        views.append(EditExtendedView().create(with: .fio, isMultiLine: false))
         views.append(EditNormalView().create(with: .email))
-        views.append(EditNormalView().create(with: .uppercase))
         views.append(EditNormalView().create(with: .phone))
-        views.append(EditNormalView().create(with: .fio))
+
+        return views
+    }
+
+    private func initScrollView(with views: [UIView]) {
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
 
         for (key, view) in views.enumerated() {
             scrollView.addSubview(view)
@@ -48,12 +59,15 @@ class ViewController: UIViewController {
         }
 
         scrollView.widthAnchor == view.widthAnchor
-
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func updateScrollViewHeight() {
+        var height: CGFloat = 0
+        if let lastView = scrollView.subviews.filter({ $0 is EditNormalView }).last {
+            height = lastView.frame.height + lastView.frame.origin.y
+        }
+
+        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: height)
     }
 
 

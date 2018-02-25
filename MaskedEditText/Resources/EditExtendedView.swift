@@ -21,8 +21,10 @@ class EditExtendedView: NibLoadingView {
 
     }
 
-    func create(with type: TextMaskType) -> Self {
+    func create(with type: TextMaskType = .none, isMultiLine: Bool = true) -> Self {
+        title.text = type.rawValue
         editTextView.type = type
+        editTextView.multiLine = isMultiLine
         return self
     }
 

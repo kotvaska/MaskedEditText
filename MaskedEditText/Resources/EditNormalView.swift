@@ -13,6 +13,7 @@ class EditNormalView: NibLoadingView {
     @IBOutlet weak var separator: UIView!
 
     func create(with type: TextMaskType) -> Self {
+        title.text = type.rawValue
         editTextField.type = type
         return self
     }
